@@ -23,7 +23,7 @@ const Navbar = () => {
           <a href="/" className='text-xl font-bold text-white'>Design<span className='text-[#85d8ff]'>DK</span></a>
           <ul className='md: flex gap-12 text-lg'>
             {
-              navItems.map(({path, link}) => <li className='text-white' key={path}>
+              navItems.map(({path, link}) => <li className='text-white hover:text-[#85d8ff] transition-all duration-200 ease-in' key={path}>
                 <NavLink to={path}>{link}</NavLink>
               </li>)
             }
